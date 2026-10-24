@@ -1,0 +1,493 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manoj S. — DevOps, Cloud Engineering and Site Reliability Engineering portfolio.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Manoj S. | DevOps &amp; Cloud Engineer Portfolio</title>
+
+  <style>
+    :root {
+      --blue: #287fbd;
+      --text: #292929;
+      --muted: #686868;
+      --line: #e5e5e5;
+      --soft: #f5f9fc;
+      --link: #176da8;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: #fff;
+      color: var(--text);
+      font: 16px/1.58 "Times New Roman", Times, serif;
+    }
+
+    a { color: var(--link); text-decoration: none; }
+    a:hover, a:focus-visible { text-decoration: underline; }
+    a:focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    .layout {
+      width: min(1080px, calc(100% - 48px));
+      margin: 58px auto 72px;
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 64px;
+      align-items: start;
+    }
+
+    .sidebar { position: sticky; top: 28px; }
+
+    .name {
+      color: var(--blue);
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: -.5px;
+      margin: 0 0 20px;
+      font-weight: 700;
+    }
+
+    .portrait {
+      width: 100%;
+      aspect-ratio: 4 / 4.6;
+      display: grid;
+      place-items: center;
+      border: 1px solid #dce6ee;
+      background: linear-gradient(145deg, #edf4f9, #cbdfea);
+      overflow: hidden;
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .initials {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: white;
+      color: var(--blue);
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .caption { color: var(--muted); margin: 10px 0 22px; }
+    .contact-links { line-height: 1.8; overflow-wrap: anywhere; }
+    .contact-links a { display: block; }
+    .github-link { display: inline-block; margin-top: 22px; }
+    main { min-width: 0; }
+
+    h2 {
+      font-size: 26px;
+      line-height: 1.25;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      font-size: 17px;
+      line-height: 1.45;
+      margin: 0 0 12px;
+    }
+
+    p { margin: 0 0 16px; }
+    .role-line { font-weight: 700; margin-bottom: 14px; }
+    .intro, .entry p { color: var(--muted); text-align: left; }
+    .intro { font-size: 16px; }
+    .section { margin-top: 32px; }
+    .divider { border: 0; border-top: 1px solid var(--line); margin: 25px 0; }
+    .skills-copy { font-weight: 400; }
+    .entry { margin-bottom: 26px; }
+    .meta { color: var(--muted); font-weight: 400; }
+
+    .highlight-list {
+      padding-left: 20px;
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .highlight-list li { margin-bottom: 7px; }
+
+    .contact-box {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      margin-top: 32px;
+    }
+
+    .availability {
+      background: var(--soft);
+      border-left: 3px solid var(--blue);
+      padding: 12px 15px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .layout {
+        width: min(640px, calc(100% - 32px));
+        margin: 32px auto;
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+
+      .sidebar { position: static; }
+      .portrait { max-width: 280px; aspect-ratio: 4 / 3; }
+      .name { font-size: 31px; }
+    }
+
+    @media print {
+      .layout {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 220px 1fr;
+        gap: 28px;
+      }
+
+      .sidebar { position: static; }
+      a { color: #222; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+
+    <aside class="sidebar" aria-label="Profile and contact details">
+      <h1 class="name">Manoj Shivalingaiah</h1>
+
+      <div class="portrait">
+        <img
+          src="profile.jpg"
+          alt="Portrait of Manoj S."
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+        >
+        <div class="initials" style="display:none" aria-hidden="true">MS</div>
+      </div>
+
+      <p class="caption">
+        DevOps · Cloud Infrastructure · Site Reliability Engineering
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:manojgowda.s0423@gmail.com">
+          manojgowda.s0423@gmail.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/manoj-s-4257ab245/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >LinkedIn Profile</a>
+      </div>
+
+      <a
+        class="github-link"
+        href="https://github.com/manoj-s0423"
+        target="_blank"
+        rel="noopener noreferrer"
+      >View GitHub Profile ↗</a>
+
+    </aside>
+
+    <main>
+      <section aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">Portfolio</h2>
+
+        <p class="role-line">
+          DevOps / Cloud Engineer | M.Sc. Software Engineering,
+          University of Europe for Applied Sciences
+        </p>
+
+        <p class="intro">
+          DevOps Engineer with 6+ years of IT experience across QA
+          automation, CI/CD, cloud infrastructure, and production
+          troubleshooting. Hands-on with AWS, Kubernetes, Terraform,
+          and Docker, combining automation and incident analysis to
+          improve software delivery consistency, release quality,
+          and application reliability.
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
+
+        <p class="skills-copy">
+          <strong>Cloud and Infrastructure:</strong>
+          AWS, GCP, EC2, S3, EKS, GKE, ECR, VPC, IAM, RDS, Lambda,
+          EventBridge, DynamoDB, Multi-AZ, Load Balancing   
+        </p>
+
+        <p class="skills-copy">
+          <strong>Containers and Kubernetes:</strong>
+          Docker, Kubernetes, Amazon EKS, Helm, Argo CD, Deployments,
+          Services, Ingress, TLS, HPA, RBAC, Namespaces, ConfigMaps,
+          Secrets, PV/PVC, Docker Compose
+        </p>
+
+        <p class="skills-copy">
+          <strong>CI/CD and DevOps:</strong>
+          Jenkins, GitHub Actions, GitLab, Git, Docker, Kubernetes, SonarQube, Trivy,
+          CI/CD Pipeline Automation, GitOps, Release Automation
+        </p>
+
+        <p class="skills-copy">
+          <strong>Infrastructure as Code and Automation:</strong>
+          Terraform, Ansible, Python, Bash, Boto3
+        </p>
+
+        <p class="skills-copy">
+          <strong>Monitoring and Incident Management:</strong>
+          Prometheus, Grafana, ELK Stack, Kibana, Sentry, CloudWatch,
+          Log Analysis, Alerting, Incident Triage, Root Cause Analysis,
+          Production Troubleshooting
+        </p>
+
+        <p class="skills-copy">
+          <strong>Security and Quality:</strong>
+          SonarQube, Trivy, AWS IAM, Kubernetes RBAC, Least Privilege,
+          Selenium, Regression Testing
+        </p>
+
+        <p class="skills-copy">
+          <strong>Networking and Reliability:</strong>
+          TCP/IP, DNS, HTTP/HTTPS, TLS/SSL, VPC Networking,
+          High Availability, SLIs/SLOs/SLAs, error budgets
+        </p>
+
+        <p class="skills-copy">
+          <strong>Collaboration:</strong>
+          Agile, Scrum, Jira, Release Coordination, Defect Management,
+          Cross-functional Collaboration
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional Experience</h2>
+
+        <article class="entry">
+          <h3>
+            Smartfrog Services GmbH
+            <span class="meta">| Jan 2026 – Present · Berlin, Germany</span>
+          </h3>
+
+          <p><strong>DevOps Engineer | QA Engineer</strong></p>
+
+          <ul class="highlight-list">
+            <li>
+              Automated software delivery across 5 services through CI
+              pipelines for builds, validation, and Docker image
+              publishing, improving release consistency and reducing
+              manual steps.
+            </li>
+            <li>
+              Standardized application packaging by containerizing
+              5 services with Docker, enabling consistent delivery
+              across environments.
+            </li>
+            <li>
+              Streamlined application deployments using Kubernetes,
+              Argo CD, and GitOps, keeping deployed configurations
+              aligned with approved changes.
+            </li>
+            <li>
+              Improved production incident diagnosis by correlating
+              application logs, alerts, and service metrics using
+              Sentry, Grafana, Kibana, and AWS CloudWatch to identify
+              root causes and support service recovery.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3>
+            Vtiger Systems India Pvt. Ltd.
+            <span class="meta">| Aug 2022 – May 2025 · Bengaluru, India</span>
+          </h3>
+
+          <p><strong>Senior QA Automation Engineer</strong></p>
+
+          <ul class="highlight-list">
+            <li>
+              Automated application builds, regression testing, and
+              deployment workflows through CI/CD pipelines, improving
+              release consistency and reducing manual validation effort.
+            </li>
+            <li>
+              Increased automated test coverage by 30% using
+              Selenium-based frameworks, helping teams detect defects
+              earlier and validate releases more efficiently.
+            </li>
+            <li>
+              Maintained 99% availability of test environments,
+              enabling teams to execute planned testing and validate
+              releases with fewer environment-related interruptions.
+            </li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3>
+            AppRight Software Solutions Pvt. Ltd.
+            <span class="meta">| Oct 2019 – Jul 2022 · Bengaluru, India</span>
+          </h3>
+
+          <p><strong>Quality Analyst</strong></p>
+
+          <ul class="highlight-list">
+            <li>
+              Reduced regression testing time by 40% through test
+              automation and structured documentation, enabling faster
+              and more efficient release validation.
+            </li>
+            <li>
+              Identified and documented software defects through
+              functional, regression, UI, and exploratory testing,
+              helping development teams resolve issues before release.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <article class="entry">
+          <h3>AI-SRE — Automated Kubernetes Incident Investigation Platform</h3>
+
+          <p>
+            Built an AI-assisted incident investigation platform to
+            analyze service errors, latency, resource utilization,
+            and pod availability issues.
+          </p>
+
+          <p>
+            Developed investigation workflows correlating Prometheus
+            metrics, Kubernetes logs, alerts, and deployment information
+            to identify affected components and support root cause analysis.
+          </p>
+
+          <p>
+            Implemented risk classification, human-approved Kubernetes
+            remediation, incident history, severity analysis, and
+            resolution tracking to support controlled incident response.
+          </p>
+
+          <p>
+            <strong>Technologies:</strong>
+            Kubernetes, Prometheus, Alertmanager, FastAPI, Claude.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>AWS Infrastructure Automation with Terraform</h3>
+
+          <ul class="highlight-list">
+            <li>
+              Automated repeatable AWS infrastructure provisioning using
+              Terraform, covering VPC networking, IAM permissions, and
+              infrastructure changes to improve consistency, reduce manual
+              configuration, and support controlled, reviewable deployments.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Technologies:</strong>
+            AWS, Terraform, VPC, IAM.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>Kubernetes Troubleshooting Lab</h3>
+
+          <ul class="highlight-list">
+            <li>
+              Built hands-on Kubernetes troubleshooting scenarios to diagnose
+              CrashLoopBackOff, failed health probes, DNS and Service
+              connectivity, scheduling failures, and CPU or memory pressure
+              using pod events, container logs, and resource metrics.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Technologies:</strong>
+            Kubernetes, Linux, networking, logs, probes, resource limits.
+          </p>
+        </article>
+
+        <article class="entry">
+          <h3>CI/CD Automation and Delivery</h3>
+
+          <ul class="highlight-list">
+            <li>
+              Automated application build, validation, Docker image
+              publishing, and regression-testing workflows using CI/CD
+              tools to reduce manual release steps, improve delivery
+              consistency, and detect defects earlier in the software
+              delivery lifecycle.
+            </li>
+          </ul>
+
+          <p>
+            <strong>Technologies:</strong>
+            Jenkins, GitHub Actions, GitLab, Docker, Kubernetes, SonarQube, Trivy.
+          </p>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+
+        <article class="entry">
+          <h3>
+            M.Sc. Software Engineering
+            <span class="meta">| University of Europe for Applied Sciences, Potsdam, Germany</span>
+          </h3>
+          <p class="intro">Graduated August 2026.</p>
+        </article>
+
+        <article class="entry">
+          <h3>
+            B.E. Electronics and Communication Engineering
+            <span class="meta">| Visvesvaraya Technological University, Belagavi, India</span>
+          </h3>
+          <p class="intro">Graduated August 2019.</p>
+        </article>
+      </section>
+
+      <footer class="contact-box" id="contact">
+        <h2>Contact</h2>
+
+        <p>
+          Open to DevOps, Cloud Engineering, and Site Reliability
+          Engineering opportunities.
+        </p>
+
+        <p>
+          <a href="mailto:manojgowda.s0423@gmail.com">
+            manojgowda.s0423@gmail.com
+          </a>
+          ·
+          <a href="https://www.linkedin.com/in/manoj-s-4257ab245/"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          ·
+          <a href="https://github.com/manoj-s0423"
+             target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
